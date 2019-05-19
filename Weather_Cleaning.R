@@ -1,5 +1,6 @@
 # Weather Case Study
 
+#Include the libraries
 library(readxl)
 library(stringr)
 library(tidyr)
@@ -14,6 +15,7 @@ class(weather)
 length(colnames(weather))
 View(weather)
 
+#Remove unwanted columns
 weather1 <- weather[, -1] #OR
 weather1 <- weather[2:35]
 colnames(weather1)
